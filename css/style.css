@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-caption { /*กรอบข้อความ */
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 50px;
+   
+    
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+    
+}
+
+
+
+footer {
+    
+    text-align: center;
+    padding: 1rem;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
