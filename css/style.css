@@ -11,8 +11,6 @@ body {
 } 
 
 
-
-
 .carousel-caption { /*กรอบข้อความ */
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -21,6 +19,8 @@ body {
    
     
 }
+
+
 
 
 footer {
