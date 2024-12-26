@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b1bac4;
+} 
+
+
+.carousel-caption { /*กรอบข้อความ */
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 50px;
+   
+    
+}
+
+
+
+
+footer {
+    
+    text-align: center;
+    padding: 1rem;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
