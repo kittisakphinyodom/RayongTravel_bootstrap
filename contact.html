@@ -29,10 +29,47 @@
   </nav>
 
   <!-- Main Content -->
-  
+  <div class="container my-5">
+    <h1 class="text-center mb-4">ติดต่อเรา</h1>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">ส่งข้อความถึงเรา</button>
 
     <!-- Contact Form Modal -->
-    
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">ส่งข้อความถึงเรา</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/submit" method="POST" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                <input type="text" class="form-control" id="fullname" name="fullname" required minlength="2" maxlength="100">
+                <div class="invalid-feedback">กรุณากรอกชื่อและนามสกุล</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">อีเมล *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">กรุณากรอกอีเมลที่ถูกต้อง</div>
+              </div>
+              <div class="mb-3">
+                <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                <input type="tel" class="form-control" id="tel" name="tel" pattern="[0-9]{10}">
+                <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">ข้อความ *</label>
+                <textarea class="form-control" id="message" name="message" required minlength="10" rows="5"></textarea>
+                <div class="invalid-feedback">กรุณากรอกข้อความ</div>
+              </div>
+              <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
  
